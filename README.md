@@ -140,7 +140,8 @@ Optionally, you can add the "Open with IntelliJ LightEdit" right-click context m
 
 - Register if you have a license.
 - Disable plugins not required for LightEdit (this can significantly improve performance).
-- Add your favorite plugins.
+- Add your favorite editor plugins.
+- Consider adding shortcut `Ctrl-Q` to close the IDE (`File/Exit` action.
 - Enjoy! :)
 
 ## Notes
