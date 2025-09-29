@@ -1,0 +1,3 @@
+- Unpack the Windows ZIP distribution of a JetBrains IDE **here**.
+- Run update-hash.ps1.
+    - Update the SHA values in launcher.yaml using the generated hashes.
