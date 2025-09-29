@@ -4,7 +4,8 @@ This repository provides a tiny Windows launcher (ideaLauncher.exe) and ready-to
 IDE in LightEdit mode. You can use IntelliJ IDEA, PyCharm, or another JetBrains IDE build, as long as you adjust the
 configuration accordingly.
 
-The guide below explains how to build the launcher and assemble the deploy folder that can be copied to `C:/Program Files/JetBrains/LightEdit`.
+The guide below explains how to build the launcher and assemble the deploy folder that can be copied to
+`C:/Program Files/JetBrains/LightEdit`.
 
 ## 1) Build the launcher (ideaLauncher.exe)
 
@@ -18,12 +19,12 @@ Steps (from CLion or terminal with the configured CMake profile):
 1. Build target "ideaLauncher" in Release.
 2. The produced executable will be copied to the `deploy` directory.
 3. During the build, the following helper files are also copied into `deploy` (if they don't already exist):
-   - `deploy/install_open_idea_lightedit.bat`
-   - `deploy/uninstall_open_idea_lightedit.bat`
-   - `deploy/update-hash.ps1`
-   - `deploy/data/idea.properties`
-   - `deploy/data/idea.vmoptions`
-   - `deploy/data/launcher.yaml`
+    - `deploy/install_open_idea_lightedit.bat`
+    - `deploy/uninstall_open_idea_lightedit.bat`
+    - `deploy/update-hash.ps1`
+    - `deploy/data/idea.properties`
+    - `deploy/data/idea.vmoptions`
+    - `deploy/data/launcher.yaml`
 
 ## 2) Finish the `deploy` directory
 
@@ -62,7 +63,8 @@ The CMake build copies the following files into `deploy` if they do not already 
 - deploy/data/idea.vmoptions
 - deploy/data/launcher.yaml
 
-If any of these are missing (e.g., if you cleaned the folder manually), rebuild the target or copy them from `files_to_copy` in the repository.
+If any of these are missing (e.g., if you cleaned the folder manually), rebuild the target or copy them from
+`files_to_copy` in the repository.
 
 ## 4) Provide the runtime MinGW DLLs
 
@@ -107,6 +109,7 @@ in `deploy/app/bin` if desired.
   the script.
 
 Example (run PowerShell from `deploy`):
+
 ```powershell
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 ./update-hash.ps1
@@ -116,10 +119,12 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 This executable is the entry point used to start the IDE in LightEdit mode.
 
-## 8) Install or copy to Program Files
+## 8) Copy to Program Files
 
 When deploy is complete, copy the whole `deploy` folder to:
 `C:/Program Files/JetBrains/LightEdit`
+
+- verification: `C:/Program Files/JetBrains/LightEdit/ideaLauncher.exe` should exist.
 
 Optionally, you can add the "Open with IntelliJ LightEdit" right-click context menu entry using:
 
