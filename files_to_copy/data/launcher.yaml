@@ -1,0 +1,18 @@
+# exe_name: which IDE binary to launch from ./app/bin/
+#   IntelliJ: idea64.exe
+exe_name: idea64.exe
+
+# Hashes (SHA-256) of the original files in ./bin/
+# Generate in PowerShell (update-hash.ps1):
+  
+#  IntelliJ IDEA 2025.2.2 (Ultimate Edition)
+#  Build #IU-252.26199.169, built on September 18, 2025
+original_vmoptions_sha: 6b5a00dcf790f0ebfc25ebc6289e7f1fa12aec83a8269a33d8d46e65da85793b
+original_properties_sha: 8dc34026934538c02477af4926e2f268efbacf3eede6c26b1a88ce8f5c3f0925
+
+# --- Custom portable files in ./data/  ---
+portable_vmoptions_name: idea.vmoptions
+portable_properties_name: idea.properties
+
+# Start in LightEdit mode?
+light_edit: true
